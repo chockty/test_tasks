@@ -31,7 +31,7 @@ module Api
     
       private
       def tasks_params
-        params.require(:tasks).permit(:content)
+        params.require(:task).permit(:content)
       end
 
       def valid_or_invalid(task)
